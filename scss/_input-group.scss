@@ -12,28 +12,25 @@
 
 // default margin - no form-group required
 @include input-group-button-variation(input-padding-y);
-
-&.bmd-form-group-sm {
+#{if(&, "&", "*")}.bmd-form-group-sm {
   @include input-group-button-variation($input-padding-y-sm);
 }
 
-&.bmd-form-group-lg {
+#{if(&, "&", "*")}.bmd-form-group-lg {
   @include input-group-button-variation($input-padding-y-lg);
 }
 
-.input-group { // may be in or outside of form-group
-
+.input-group {
+  // may be in or outside of form-group
   .input-group-addon {
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-color: transparent;
     border-color: transparent;
   }
-
-  .input-group-addon + input,
-  input + .input-group-addon {
+  .input-group-addon+input,
+  input+.input-group-addon {
     margin-left: .75rem;
   }
 }
