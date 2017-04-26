@@ -29,10 +29,15 @@ const Checkbox = (($) => {
    */
   class Checkbox extends BaseSelection {
 
-    constructor($element, config, properties = {inputType: NAME, outerClass: NAME}) {
+    constructor($element, config, properties = {
+      inputType: NAME,
+      outerClass: NAME
+    }) {
       super($element, $.extend(true,
         //{invalidComponentMatches: [File, Radio, Text, Textarea, Select]},
-        Default, config), properties)
+        {
+          template: Default.template
+        }, config), properties)
     }
 
     dispose(dataKey = DATA_KEY) {
