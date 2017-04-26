@@ -33,7 +33,7 @@ const Select = (($) => {
     constructor($element, config) {
       super($element, $.extend(true,
         //{invalidComponentMatches: [Checkbox, File, Radio, Switch, Text, Textarea]},
-        Default, config))
+        {}, Default, config))
 
       // floating labels will cover the options, so trigger them to be above (if used)
       this.addIsFilled()

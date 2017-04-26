@@ -40,7 +40,7 @@ const File = (($) => {
     constructor($element, config) {
       super($element, $.extend(true,
         //{invalidComponentMatches: [Checkbox, Radio, Text, Textarea, Select, Switch]},
-        Default, config))
+        {}, Default, config))
 
       this.$bmdFormGroup.addClass(ClassName.IS_FILE)
     }

@@ -31,7 +31,7 @@ const Radio = (($) => {
     constructor($element, config, properties = {inputType: NAME, outerClass: NAME}) {
       super($element, $.extend(true,
         //{invalidComponentMatches: [Checkbox, File, Switch, Text]},
-        Default, config), properties)
+        {}, Default, config), properties)
     }
 
     dispose(dataKey = DATA_KEY) {

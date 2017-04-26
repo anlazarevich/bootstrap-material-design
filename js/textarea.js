@@ -31,7 +31,7 @@ const Textarea = (($) => {
     constructor($element, config) {
       super($element, $.extend(true,
         //{invalidComponentMatches: [Checkbox, File, Radio, Text, Select, Switch]},
-        Default, config))
+        {}, Default, config))
     }
 
     dispose() {

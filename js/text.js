@@ -31,7 +31,7 @@ const Text = (($) => {
     constructor($element, config) {
       super($element, $.extend(true,
         //{invalidComponentMatches: [Checkbox, File, Radio, Switch, Select, Textarea]},
-        Default, config))
+        {}, Default, config))
     }
 
     dispose(dataKey = DATA_KEY) {

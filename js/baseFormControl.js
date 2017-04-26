@@ -19,7 +19,7 @@ const BaseFormControl = (($) => {
   class BaseFormControl extends BaseInput {
 
     constructor($element, config) {
-      super($element, $.extend(true, Default, config))
+      super($element, $.extend(true, {}, Default, config))
 
       // Initially mark as empty
       if (this.isEmpty()) {

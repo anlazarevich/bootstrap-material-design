@@ -35,9 +35,7 @@ const Checkbox = (($) => {
     }) {
       super($element, $.extend(true,
         //{invalidComponentMatches: [File, Radio, Text, Textarea, Select]},
-        {
-          template: Default.template
-        }, config), properties)
+        {}, Default, config), properties)
     }
 
     dispose(dataKey = DATA_KEY) {
